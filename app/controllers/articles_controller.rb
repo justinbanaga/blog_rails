@@ -1,3 +1,10 @@
+# The ArticlesController class defines the actions that can be performed on the Articles resource.
+#
+# Args:
+#   params: a hash of parameters
+#   article_params: This is a private method that whitelists the parameters we're receiving
+# Returns:
+#   The article object.
 class ArticlesController < ApplicationController
   def index
     @articles = Article.all
@@ -45,6 +52,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :status)
   end
 end
