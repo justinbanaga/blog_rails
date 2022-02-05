@@ -1,9 +1,22 @@
-<%= form_with model: [@article, @article.comments.build] do |form|%>
-<p><%= form.label :commenter %> <%= form.text_field :commenter %></p>
-<p><%= form.label :body %> <%= form.text_area :body %></p>
-<p>
-<%= form.label :status %>
-<%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
-</p>
-<p><%= form.submit %></p>
-<% end %>
+
+ <div class="card-body">
+  <%= form_with model: [@article, @article.comments.build] do |form|%>
+ 
+ 
+   <%= form.label :commenter, class: "col-sm-2 col-form-label" %>
+    <%= form.text_field :commenter, class: "form-control" %>
+     </p>
+ 
+     <p>
+      <%= form.label :body, class: "col-sm-2 col-form-label" %>
+       <%= form.text_area :body, class: "form-control" %>
+     </p>
+     <p>
+      <%= form.label :status %>
+       <%= form.select :status, ['public', 'private' , 'archived' ], selected: 'public' %>
+     </p>
+     <p>
+      <%= form.submit class: "btn btn-primary" %>
+     </p>
+     <% end %>
+ </div>
