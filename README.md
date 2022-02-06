@@ -1,14 +1,14 @@
 <div align="center">
-      <h1> 
-            ![Screenshot2](https://user-images.githubusercontent.com/89715673/152685306-fc680134-0d28-4e38-b3df-1678c81d1aee.png)
+      <h1>Ruby on Rails - Blog with comments</h1>
             
-            ![Screenshot4](https://user-images.githubusercontent.com/89715673/152685464-2e5b4c4a-7667-49fe-96ef-a1a2b50aa90b.png)
-
             
-![Screenshot3png](https://user-images.githubusercontent.com/89715673/152685446-ac57a1f9-772a-45e5-9855-36305423979d.png)
-            
+![Screenshot2](https://user-images.githubusercontent.com/89715673/152685306-fc680134-0d28-4e38-b3df-1678c81d1aee.png)      
 ![Screenshot1](https://user-images.githubusercontent.com/89715673/152685390-25ec4fcd-c316-470f-9444-87ace3874ee1.png)
-            <img src="https://github.com/justinbanaga/blog" width="80px"><br/>Ruby on Rails - Blog with comments</h1>
+![Screenshot3png](https://user-images.githubusercontent.com/89715673/152685446-ac57a1f9-772a-45e5-9855-36305423979d.png)
+![Screenshot4](https://user-images.githubusercontent.com/89715673/152685464-2e5b4c4a-7667-49fe-96ef-a1a2b50aa90b.png)
+            
+
+      
      </div>
 
 
