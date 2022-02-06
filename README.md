@@ -1,5 +1,5 @@
 <div align="center">
-      <h1>Ruby on Rails - Blog with comments</h1>
+      <h1>Ruby on Rails - Blog with Comments and Authentication</h1>
             
             
 ![Screenshot2](https://user-images.githubusercontent.com/89715673/152685306-fc680134-0d28-4e38-b3df-1678c81d1aee.png)      
