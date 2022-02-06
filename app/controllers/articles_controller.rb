@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The ArticlesController class defines the actions that can be performed on the Articles resource.
 #
 # Args:

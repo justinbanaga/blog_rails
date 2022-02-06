@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 1. The module is named CommentsHelper.
 # 2. The module is defined in the comments_helper.rb file.
 # 3. The module is included in the application_helper.rb file.

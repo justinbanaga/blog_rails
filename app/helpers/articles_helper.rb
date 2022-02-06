@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 1. The module name is ArticlesHelper.
 # 2. The module name is prepended to the helper name to create the full helper module name.
 # 3. The module is defined with the module keyword.

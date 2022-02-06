@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # The `Visible` module is included in the `Article` and `Comment` models.
 #
 # Args:
