@@ -1,40 +1,28 @@
-
 <h1>Articles</h1>
 Our blog has <%= Article.public_count %> articles and counting!
-  <br>
-  <br>
-
-  <% @articles.each do |article| %>
-    <% unless article.archived? %>
-      <div class="card">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">
-            <%= article.title %>
-          </h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content...</p>
-
-          <%= link_to "Read More" , article, class:"btn btn-primary" %>
-            </li>
-
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-         
-        </div>
-
-
+<br>
+<br>
+<% @articles.each do |article| %>
+  <% unless article.archived? %>
+    <div class="card">
+      <div class="card-header">
+        Featured
       </div>
-      <% end %>
-        <% end %>
-          <br>
-
-          <div class="card">
-
-
-            <%= link_to "New Article" , new_article_path, class:"btn btn-lg btn-info" %>
-
-          </div>
-
+      <div class="card-body">
+        <h5 class="card-title">
+          <%= article.title %>
+        </h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content...</p>
+        <%= link_to "Read More" , article, class:"btn btn-primary" %>
+      </li>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+<% end %>
+<% end %>
+<br>
+<div class="card">
+  <%= link_to "New Article" , new_article_path, class:"btn btn-lg btn-info" %>
+</div>

@@ -1,42 +1,29 @@
 <%= form_with model: article do |form| %>
   <div class="row mb-3">
-
-    <%= form.label :title, class: "col-sm-2 col-form-label" %><br />
-      
-        <%= form.text_field :title, class: "form-control" %>
-      
-      <% article.errors.full_messages_for(:title).each do |message| %>
-
-        <div>
-          <%= message %>
-        </div>
-
-        <% end %>
+    <%= form.label :title, class: "col-sm-2 col-form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
-
   <div class="row mb-3">
-    <%= form.label :body, class: "col-sm-2 col-form-label" %><br />
-
-      
-        <%= form.text_area :body, class: "form-floating form-control" %><br />
-      
-
-      <% article.errors.full_messages_for(:body).each do |message| %>
-        <div>
-          <%= message %>
-        </div>
-        <% end %>
+    <%= form.label :body, class: "col-sm-2 col-form-label" %>
+    <%= form.text_area :body, class: "form-floating form-control input-width" %>
   </div>
-
   <div class="row mb-3">
     <%= form.label :status, class: "col-sm-1 col-form-label" %>
-      
-        <%= form.select :status, ['public', 'private' , 'archived' ], selected: 'public' , class: "form-floating form-select" %>
-      
+    <%= form.select :status, ['public', 'private' , 'archived' ], selected: 'public' , class: "form-floating form-select" %>
   </div>
-
+  <div>
+    <% if @article.errors.any? %>
+      <h5>The following errors prevented the article from being saved:</h5>
+      <ul>
+        <% article.errors.full_messages.each do |message| %>
+          <li>
+            <%= message %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <div>
     <%= form.submit class:"btn btn-info" %>
   </div>
-  <% end %>
-
+<% end %>
