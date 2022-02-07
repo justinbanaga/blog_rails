@@ -9,7 +9,7 @@
   <br>
   <br>
   <div>
-    <% if @article.errors.any? %>
+    <% unless @article.errors.empty? %>
       <h5>The following errors prevented the article from being saved:</h5>
       <ul>
         <% article.errors.full_messages.each do |message| %>
