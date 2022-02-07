@@ -1,16 +1,13 @@
 <%= form_with model: article do |form| %>
-  <div class="row mb-3">
-    <%= form.label :title, class: "col-sm-2 col-form-label" %>
-    <%= form.text_field :title, class: "form-control" %>
-  </div>
-  <div class="row mb-3">
-    <%= form.label :body, class: "col-sm-2 col-form-label" %>
-    <%= form.text_area :body, class: "form-floating form-control input-width" %>
-  </div>
-  <div class="row mb-3">
-    <%= form.label :status, class: "col-sm-1 col-form-label" %>
-    <%= form.select :status, ['public', 'private' , 'archived' ], selected: 'public' , class: "form-floating form-select" %>
-  </div>
+  <%= form.label :title, class: "col-sm-2 col-form-label" %>
+  <%= form.text_field :title, class: "form-control" %>
+  <%= form.label :body, class: "col-sm-2 col-form-label" %>
+  <%= form.text_area :body, class: "form-floating form-control input-width" %>
+  <br>
+  <%= form.label :status, class: "col-sm-1 col-form-label" %>
+  <%= form.select :status, ['public', 'private' , 'archived' ], selected: 'public' , class: "form-floating form-select" %>
+  <br>
+  <br>
   <div>
     <% if @article.errors.any? %>
       <h5>The following errors prevented the article from being saved:</h5>
